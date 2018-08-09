@@ -2,20 +2,23 @@
   "practical": "1",
   "process_models": [
     {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
+      "name": "Continuous integration",
+      "objective": "developers work as community and integrate/merge code in shared repository; build/merged changes are tested by automated software",
+      "pros": "increase workflow process and saves time and effort(code break); bugs and defects can be detected earlier; reduces manual testing effort",
+      "cons": "some typo mistake can be reveal to end user if it is deployed without manual verification",
+      "reference": "https://codeship.com/continuous-integration-essentials"
     },
     {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
+      "name": "Continuous Deployment",
+      "objective": "Continuous integration with automated deployment if codebase passes all test cases",
+      "example": "Linux Development, Kodi Development, etc.",
+      "pros": "No need of manual deployment; bugs and defects can be detected earlier; quick feedback of system for business",
+      "cons": "some typo mistake reveal to end user as soon as it is deployed",
+      "reference": "https://codeship.com/continuous-integration-essentials"
     },
     {
-      "name": "",
-      "objective": "",
+      "name": "Waterfall Model",
+      "objective": "Sequential Phases of software development;",
       "pros": "",
       "cons": ""
     },

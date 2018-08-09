@@ -14,7 +14,7 @@ Comparison
 | 03    | Incremental development       |  |  |  |
 | 04    | Rapid application development |  |  |  |
 | 05    | Agile development             |  |  |  |
-| 06    | Waterfall development         | Sequential Phases of software development;|  |  |
+| 06    | Waterfall development         |  |  |  |
 |       |                               |  |  |  |
 | 07    | Spiral development            |  |  |  |
 | 08    | Leave-It development          |  |  |  |
