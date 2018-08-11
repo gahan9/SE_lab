@@ -2,6 +2,7 @@
   "practical": "1",
   "process_models": [
     {
+      "id": 21,
       "name": "Continuous integration",
       "objective": "developers work as community and integrate/merge code in shared repository; build/merged changes are tested by automated software",
       "pros": "increase workflow process and saves time and effort(code break); bugs and defects can be detected earlier; reduces manual testing effort",
@@ -9,6 +10,7 @@
       "reference": "https://codeship.com/continuous-integration-essentials"
     },
     {
+      "id": 22,
       "name": "Continuous Deployment",
       "objective": "Continuous integration with automated deployment if codebase passes all test cases",
       "example": "Linux Development, Kodi Development, etc.",
@@ -17,21 +19,24 @@
       "reference": "https://codeship.com/continuous-integration-essentials"
     },
     {
+      "id": 1,
       "name": "Waterfall Model",
-      "objective": "Sequential Phases of software development;",
+      "objective": "(first introduced)Sequential Phases of software development;",
+      "pros": "simple to adopt; best suitable for small projects / very clear requirements",
+      "cons": "requirements unclear because end-user/client can't see the working software (blurry requirements); high cost for implementing creative work after adopted; hard to estimate/predict cost, deadline, limitation; "
+    },
+    {
+      "id": 2,
+      "name": "Royce's final model**",
+      "objective": "improvised waterfall model; feedback->design->requirement",
       "pros": "",
       "cons": ""
     },
     {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
+      "id": 3,
+      "name": "The Sashimi Model",
+      "objective": "waterfall model with overlapping phases",
+      "pros": "implementation issue might be discovered during design and implementation",
       "cons": ""
     },
     {

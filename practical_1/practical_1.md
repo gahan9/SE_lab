@@ -9,12 +9,12 @@ Comparison
 ----------
 | Sr No | Process Model                 | Objective | Pros | Cons |
 | :---: |:---------------------         | :---------| ---: | ---: |
-| 01    | Continuous integration        | - | - | - |
+| `01    | Continuous integration        | - | - | - |
 | 02    | Prototyping                   |  |  |  |
 | 03    | Incremental development       |  |  |  |
 | 04    | Rapid application development |  |  |  |
 | 05    | Agile development             |  |  |  |
-| 06    | Waterfall development         |  |  |  |
+| `06    | Waterfall development         |  |  |  |
 |       |                               |  |  |  |
 | 07    | Spiral development            |  |  |  |
 | 08    | Leave-It development          |  |  |  |
