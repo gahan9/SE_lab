@@ -158,6 +158,8 @@
       "objective": "developers work as community and integrate/merge code in shared repository; build/merged changes are tested by automated software",
       "pros": "increase workflow process and saves time and effort(code break); bugs and defects can be detected earlier; reduces manual testing effort",
       "cons": "some typo mistake can be reveal to end user if it is deployed without manual verification",
+      "images": [
+      ],
       "references": [
         "https://codeship.com/continuous-integration-essentials"
       ]
@@ -169,6 +171,8 @@
       "example": "Linux Development, Kodi Development, etc.",
       "pros": "No need of manual deployment; bugs and defects can be detected earlier; quick feedback of system for business",
       "cons": "some typo mistake reveal to end user as soon as it is deployed",
+      "images": [
+      ],
       "references": [
         "https://codeship.com/continuous-integration-essentials"
       ]
