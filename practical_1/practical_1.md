@@ -12,15 +12,26 @@ Comparison
 | `00    | Waterfall development         |  |  |  |
 | `00    | royce's final model         |  |  |  |
 | `00    | sashimi model         |  |  |  |
+| `00    | Plan Driven Development      |  |  |  |
 | `00    | Prototyping                   |  |  |  |
+| `00    | Incremental development       |  |  |  |
 | `00    | Spiral development            |  |  |  |
 | `00    | Agile development             |  |  |  |
-| `00    | Continuous integration        | - | - | - |
-| `00    | Continuous development        | - | - | - |
 | `00    | Rapid application development |  |  |  |
 | `00    | DSDM (Dynamic Software Development Method) |  |  |  |
-| `00    | Plan Driven Development |  |  |  |
-| 03    | Incremental development       |  |  |  |
+| `00    | Continuous integration        | - | - | - |
+| `00    | Continuous development        | - | - | - |
+| `00    | Extreme Programming (XP)     |  |  |  |
+| `00    | Scrum                        |  |  |  |
+| `00    | PRINCE2                        |  |  |  |
+| `00    | Reuse-oriented Software Engineering |  |  |  |
+| `00    | PRiSM                        |  |  |  |
+| `00    | Critical Chain / Path        |  |  |  |
+| `00    | Six Sigma                        |  |  |  |
+| `00    | Iterative Development        |  |  |  |
+| `00    | Feature driven development |  |  |  |
+| `00    | Lean Development (LD) |  |  |  |
+| 08    | Backlog          |  |  |  |
 | 08    | Leave-It development          |  |  |  |
 | 09    | Behavior-driven development   |  |  |  |
 | 10    | Chaos model                   |  |  |  |
@@ -38,16 +49,13 @@ Comparison
 | 22    | code and fix                   |  |  |  |
 | 23    | Executable UML                 |  |  |  |
 | 24    | Enterprise Unified Process     |  |  |  |
-| 25    | Scrum                          |  |  |  |
 | 26    | ISO/IEC 15504(Software Process Improvement and Capability Determination (SPICE)) |  |  |  |
 | 27    | Capability Maturity Model (CMM) |  |  |  |
 | 27    | Capability Maturity Model Integration (CMMI) |  |  |  |
 | 28    | Systems modeling |  |  |  |
 | 29    | B-model |  |  |  |
 | 30    | Wheel-and-spoke Model |  |  |  |
-| 31    | Lean Development (LD) |  |  |  |
 | 31    | Kanban |  |  |  |
-| 31    | Feature driven development |  |  |  |
 
 Summary
 -------

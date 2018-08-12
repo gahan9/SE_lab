@@ -153,7 +153,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": 11,
       "name": "Continuous integration",
       "objective": "developers work as community and integrate/merge code in shared repository; build/merged changes are tested by automated software",
       "pros": "increase workflow process and saves time and effort(code break); bugs and defects can be detected earlier; reduces manual testing effort",
@@ -165,7 +165,7 @@
       ]
     },
     {
-      "id": 22,
+      "id": 12,
       "name": "Continuous Deployment",
       "objective": "Continuous integration with automated deployment if codebase passes all test cases",
       "example": "Linux Development, Kodi Development, etc.",
@@ -178,11 +178,148 @@
       ]
     },
     {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
+      "id": 13,
+      "name": "Extreme Programming (XP)",
+      "objective": "accentuate teamwork (pair programming); responsive to changing requirements (continuous integration); frequent releases in short development cycles; code refactor, Planning; regular(daily) communication",
+      "pros": "improve productivity; new requirements can be easily adopted; focuses on user feedback and involvement",
+      "cons": "efficiency depends on involved people; future possibilities and outcome are unknown; requires regular communication/meeting raises cost",
+      "images": [
+        "https://cdn.acodez.in/wp-content/uploads/2015/07/extreme-programing-methodology.jpg",
+        "https://www.codeproject.com/KB/architecture/604417/XPExt.PNG",
+        "https://www.codeproject.com/KB/architecture/604417/circles-new.png"
+      ],
+      "references": [
+        "http://www.extremeprogramming.org/",
+        "https://www.codeproject.com/Articles/604417/Agile-software-development-methodologies-and-how-t"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Scrum",
+      "objective": "incremental+agile; focuses on short or quick deadline delivery of product; ",
+      "pros": "rapid feedback and quick response to changes; good productivity with adapting changes of requirements and feature; with every iterative feedback/meet/testing non-desire feature/bugs can be fixed easily",
+      "cons": "as regular changes adapted and integrated project might not be well documented; require more experience of project handling; time frames might extended frequently to adapt changes",
+      "images": [
+        "https://www.codeproject.com/KB/architecture/604417/ScrumPrinciples.png",
+        "https://cdn.acodez.in/wp-content/uploads/2015/07/scrum-development-methodology.jpg"
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Iterative Development",
+      "objective": "building small modules of all featured project; build project quickly for user feedback",
+      "pros": "flexibility for changes; potential bugs/issues can be fixed at earlier stages; progress can be easily tracked",
+      "cons": "might require more amount of resource; hard to determine deadline; require trained and skilled person for risk analysis",
+      "images": [
+        "https://cdn-images-1.medium.com/max/800/1*1HK3LKCgnPIU2xQgbcl9pQ.png"
+      ],
+      "references": [
+        "https://www.dcslsoftware.com/pros-cons-iterative-software-development/"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Feature Driven Development",
+      "objective": "focused on serving large number of teams; suitable for large project",
+      "pros": "successive progress in large projects; supports continuous update in project",
+      "cons": "not suitable for small projects/single person; documentation barely maintained; doesn't guarantee deadline; much more dependable on leading developer",
+      "images": [
+        "https://cdn.acodez.in/wp-content/uploads/2015/07/unnamed.jpg"
+      ],
+      "references": [
+        "http://agilemodeling.com/essays/fdd.htm"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Reuse-oriented Software Engineering",
+      "objective": "utilizing existing codebase similar to requirement;",
+      "pros": "system delivery can be quicker; ",
+      "cons": "limited scopes; dependency issue may rise",
+      "images": [
+        "https://cdn-images-1.medium.com/max/800/1*4UX3247GjW03wpNDCck5TQ.png"
+      ],
+      "references": [
+        "https://medium.com/omarelgabrys-blog/software-engineering-software-process-and-software-process-models-part-2-4a9d06213fdc"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Critical Chain / Path",
+      "objective": "focuses to solve resource issues and design for teams of people with flexible skills; determine core element and deadline on its basis",
+      "pros": "easy to collaborate; tracking and managing resources and developer is easier",
+      "cons": "each stage plan may extend timeline hence might not suite to small projects",
+      "images": [
+      ],
+      "references": [
+        "https://www.workflowmax.com/blog/choose-your-project-management-methodology-pros-and-cons-of-agile-waterfall-prism-and-more"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Projects integrating Sustainable Methods (PRiSM)",
+      "objective": "focuses to account environmental factors; developed by GPM Global; used at large-scale construction(real-estate) projects",
+      "pros": "shows client about seriousness of developer related to environmental factors",
+      "cons": "can't work in isolation",
+      "images": [
+      ],
+      "references": [
+        "https://www.workflowmax.com/blog/choose-your-project-management-methodology-pros-and-cons-of-agile-waterfall-prism-and-more"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Projects IN Controlled Environments (PRINCE2)",
+      "objective": "de facto standard(convention) used by the UK government since 1996; process oriented; each stage with it's own plan; ",
+      "pros": "heavily documented; suitable for corporate entities",
+      "cons": "it'll take amount of time to adapt changes (due to heavily documented)",
+      "images": [
+      ],
+      "references": [
+        "https://www.workflowmax.com/blog/choose-your-project-management-methodology-pros-and-cons-of-agile-waterfall-prism-and-more"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Lean Development (LD)",
+      "objective": "empowering team to produce great results with delivering ton of value while producing little project waste*; ",
+      "pros": "low cost budget; good for short deadline and resource",
+      "cons": "depends on decision making (how quickly good decision are made)",
+      "images": [
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Rational Unified Process (RUP)",
+      "objective": "Invented by Rational, a division of IBM; iterative waterfall (because it inherits best part of waterfall); 4 phases per project; 9 disciplines per phase[waterfall strategy to moving to next phase]",
+      "pros": "best of waterflow with iterative approach",
+      "cons": "too heavily relies on user feedback",
+      "images": [
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Event Chain Methodology",
+      "objective": "focuses on planning for potential risks; handles impact of external events on project;",
+      "pros": "allows to examine relationship between tasks and external pressures",
+      "cons": "sometimes beneficial external events might be considered as threat by project manager",
+      "images": [
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Kanban",
+      "objective": "steady stream of product delivery; continuous workflow",
+      "pros": "easy to track time",
+      "cons": "major variation in user requirements ",
       "images": [
       ],
       "references": [
@@ -321,124 +458,15 @@
       ]
     },
     {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
+      "id": 31,
+      "name": "Six Sigma",
+      "objective": "management framework designed to be driven by data; developed my Motorola",
+      "pros": "ensures product is 99.99966% error free; suggests improvements before defects even appear",
+      "cons": "extremely rigid; limits creativity of developer",
       "images": [
       ],
       "references": [
-      ]
-    },
-    {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
-      "images": [
-      ],
-      "references": [
-      ]
-    },
-    {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
-      "images": [
-      ],
-      "references": [
-      ]
-    },
-    {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
-      "images": [
-      ],
-      "references": [
-      ]
-    },
-    {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
-      "images": [
-      ],
-      "references": [
-      ]
-    },
-    {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
-      "images": [
-      ],
-      "references": [
-      ]
-    },
-    {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
-      "images": [
-      ],
-      "references": [
-      ]
-    },
-    {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
-      "images": [
-      ],
-      "references": [
-      ]
-    },
-    {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
-      "images": [
-      ],
-      "references": [
-      ]
-    },
-    {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
-      "images": [
-      ],
-      "references": [
-      ]
-    },
-    {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
-      "images": [
-      ],
-      "references": [
+        "https://www.workflowmax.com/blog/choose-your-project-management-methodology-pros-and-cons-of-agile-waterfall-prism-and-more"
       ]
     },
     {
