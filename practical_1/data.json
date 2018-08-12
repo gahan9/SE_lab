@@ -1,13 +1,166 @@
 {
-  "practical": "1",
+  "practical": 1,
+  "title": "To study and compare various software process models",
+  "references":[
+    "https://www.researchgate.net/figure/Sashimi-waterfall-model-with-overlapping-phases-4_fig4_267711880",
+    "http://www.thomasalspaugh.org/pub/fnd/softwareProcess.html#Sashimi",
+    "https://www.workflowmax.com/blog/choose-your-project-management-methodology-pros-and-cons-of-agile-waterfall-prism-and-more",
+    "https://medium.com/globalluxsoft/5-popular-software-development-models-with-their-pros-and-cons-12a486b569dc",
+    "https://acodez.in/12-best-software-development-methodologies-pros-cons/#Agile_Software_Development_Methodology",
+    "https://www.scribd.com/document/117108705/Sashimi-Waterfall-Software-Development-Process-Eunice",
+    "https://www.codeproject.com/Articles/604417/Agile-software-development-methodologies-and-how-t",
+    "",
+    "",
+    "",
+    ""
+  ],
   "process_models": [
+    {
+      "id": 1,
+      "name": "Waterfall Model",
+      "objective": "(first introduced)Sequential Phases of software development;",
+      "pros": "simple to adapt; best suitable for small projects / very clear requirements; easier to test and analyze",
+      "cons": "Only matches precise needs; requirements unclear because end-user/client can't see the working software (blurry requirements); high cost for implementing creative work after adapted; hard to estimate/predict cost, deadline, limitation; can't apply to maintenance project",
+      "images":[
+        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-waterfallSimple.png",
+        "https://cdn.acodez.in/wp-content/uploads/2015/07/waterfall-model.jpg",
+        "https://www.codeproject.com/KB/architecture/604417/waterfal.png"
+      ],
+      "references":[
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Royce's final model**",
+      "objective": "improvised waterfall model; feedback->design->requirement",
+      "pros": "overlapping of stage is possible according to feedback from client",
+      "cons": "",
+      "images":[
+        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-waterfallFeedback.png"
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 3,
+      "name": "The Sashimi Model",
+      "objective": "waterfall model with overlapping phases; most appropriate for medium-sized projects",
+      "pros": "implementation issue might be discovered during design and implementation",
+      "cons": "rework needed if requirement changes after design or coding",
+      "images":[
+        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-sashimi.png"
+      ],
+      "references": [
+        "http://www.thomasalspaugh.org/pub/fnd/softwareProcess.html#Sashimi"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Plan Driven Development",
+      "objective": "project success directly depends on how the plan is followed and requirement stability; ",
+      "pros": "less cost to requirement changes before design",
+      "cons": "costly to adapt to changes after design; highly dependent on requirement stability",
+      "images": [
+        "https://www.codeproject.com/KB/architecture/604417/PlanVsAgile.PNG"
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Prototyping",
+      "objective": "initial prototype developed to validate requirements, identify problems and solution for the problems",
+      "pros": "possible to determine clear idea about functional process of software/product; low failure risk in software functionality",
+      "cons": "over threshold involvement of client can affect development process; too many changes(patches) affect system flow(i.e. might become hard to debug after too many patches)",
+      "images": [
+        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-prototyping.png",
+        "https://cdn.acodez.in/wp-content/uploads/2015/07/prototype-methodology.jpg"
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Incremental Development",
+      "objective": "evolving software from initial implementation to operational software with several versions of user feedback",
+      "pros": "user can validate system with respect to requirements delivery at early stages",
+      "cons": "later stages might become costlier in adapting changes as previous/existing system modules becomes degraded; due addition of new features, system architecture might face issue which may not exist in earlier stages",
+      "images": [
+        "https://cdn-images-1.medium.com/max/800/1*Pk-2Y3VE1UYzVutv3WkHZQ.png"
+      ],
+      "references": [
+        "https://medium.com/omarelgabrys-blog/software-engineering-software-process-and-software-process-models-part-2-4a9d06213fdc",
+        "https://en.wikipedia.org/wiki/Incremental_build_model"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Spiral",
+      "objective": "cyclical model; producing prototype in each cycle for testing and risk analysis until software is operational (as per requirements/desire)",
+      "pros": "risk factors are reduced; suitable for large/complex projects; additional feature can be introduced",
+      "cons": "costly model for development; final operational may starve as cycle may continue; project can be compromised if failed to evaluate risk analysis properly",
+      "images": [
+        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-spiral0.png",
+        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-spiralBoehm.png",
+        "https://cdn-images-1.medium.com/max/800/1*F7eina8mDbPJ2XdjmkAoJw.jpeg"
+      ],
+      "references":[
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Agile development",
+      "objective": "fast catching up and flexible; targets tech industry, people and collaboration within; focuses on adapting changes and fast turnaround",
+      "pros": "suitable for creative projects; easy to adapt creative ideas in existing framework/design; transparency maintains",
+      "cons": "only focus on software work impact on documentation efficiency; path can be diverged as outcome seem unclear",
+      "images": [
+        "https://www.codeproject.com/KB/architecture/604417/agilesuccess.png",
+        "https://www.codeproject.com/KB/architecture/604417/agilevswater.jpg",
+        "https://www.codeproject.com/KB/architecture/604417/planvsagileNext.png",
+        "https://www.codeproject.com/KB/architecture/604417/ability_to_change.PNG",
+        "https://www.codeproject.com/KB/architecture/604417/visibility.PNG"
+      ],
+      "references": [
+        "https://www.codeproject.com/Articles/604417/Agile-software-development-methodologies-and-how-t",
+        "https://acodez.in/12-best-software-development-methodologies-pros-cons/#Agile_Software_Development_Methodology"
+        ]
+    },
+    {
+      "id": 9,
+      "name": "Rapid application development (RAD)",
+      "objective": "primary focus on providing quick results; a better development process with support of other development approaches",
+      "pros": "effortless development process; quickly reviewable; ensures client inputs and feedback",
+      "cons": "depends on overall team performance; requires person with highly adequate knowledge and skills; not suitable for small budget project",
+      "images": [
+        "https://cdn.acodez.in/wp-content/uploads/2015/07/rapid-application-development.jpg"
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Dynamic Software Development Method (DSDM)",
+      "objective": "derived from RAD; iterative + incremental; focuses on end-user/client involvement; primary focus on system development in deadline and allocated budget",
+      "pros": "quick delivery of module(functionality); easy access to end user; determine project outcome earlier",
+      "cons": "expensive implementation; not possible to adapt by small organization; ",
+      "images": [
+        "https://cdn.acodez.in/wp-content/uploads/2015/07/dynamic-system-development-model-methodology.jpg",
+        "http://www.codeproject.com/KB/architecture/dsdm/d1.jpg",
+        "http://dsdmofagilemethodology.wikidot.com/local--files/start/ass11.PNG"
+      ],
+      "references": [
+        "http://dsdmofagilemethodology.wikidot.com"
+      ]
+    },
     {
       "id": 21,
       "name": "Continuous integration",
       "objective": "developers work as community and integrate/merge code in shared repository; build/merged changes are tested by automated software",
       "pros": "increase workflow process and saves time and effort(code break); bugs and defects can be detected earlier; reduces manual testing effort",
       "cons": "some typo mistake can be reveal to end user if it is deployed without manual verification",
-      "reference": "https://codeship.com/continuous-integration-essentials"
+      "references": [
+        "https://codeship.com/continuous-integration-essentials"
+      ]
     },
     {
       "id": 22,
@@ -16,214 +169,284 @@
       "example": "Linux Development, Kodi Development, etc.",
       "pros": "No need of manual deployment; bugs and defects can be detected earlier; quick feedback of system for business",
       "cons": "some typo mistake reveal to end user as soon as it is deployed",
-      "reference": "https://codeship.com/continuous-integration-essentials"
+      "references": [
+        "https://codeship.com/continuous-integration-essentials"
+      ]
     },
     {
-      "id": 1,
-      "name": "Waterfall Model",
-      "objective": "(first introduced)Sequential Phases of software development;",
-      "pros": "simple to adopt; best suitable for small projects / very clear requirements",
-      "cons": "requirements unclear because end-user/client can't see the working software (blurry requirements); high cost for implementing creative work after adopted; hard to estimate/predict cost, deadline, limitation; "
-    },
-    {
-      "id": 2,
-      "name": "Royce's final model**",
-      "objective": "improvised waterfall model; feedback->design->requirement",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "id": 3,
-      "name": "The Sashimi Model",
-      "objective": "waterfall model with overlapping phases",
-      "pros": "implementation issue might be discovered during design and implementation",
-      "cons": ""
-    },
-    {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     }
   ]
 }

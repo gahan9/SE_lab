@@ -9,14 +9,18 @@ Comparison
 ----------
 | Sr No | Process Model                 | Objective | Pros | Cons |
 | :---: |:---------------------         | :---------| ---: | ---: |
-| `01    | Continuous integration        | - | - | - |
-| 02    | Prototyping                   |  |  |  |
+| `00    | Waterfall development         |  |  |  |
+| `00    | royce's final model         |  |  |  |
+| `00    | sashimi model         |  |  |  |
+| `00    | Prototyping                   |  |  |  |
+| `00    | Spiral development            |  |  |  |
+| `00    | Agile development             |  |  |  |
+| `00    | Continuous integration        | - | - | - |
+| `00    | Continuous development        | - | - | - |
+| `00    | Rapid application development |  |  |  |
+| `00    | DSDM (Dynamic Software Development Method) |  |  |  |
+| `00    | Plan Driven Development |  |  |  |
 | 03    | Incremental development       |  |  |  |
-| 04    | Rapid application development |  |  |  |
-| 05    | Agile development             |  |  |  |
-| `06    | Waterfall development         |  |  |  |
-|       |                               |  |  |  |
-| 07    | Spiral development            |  |  |  |
 | 08    | Leave-It development          |  |  |  |
 | 09    | Behavior-driven development   |  |  |  |
 | 10    | Chaos model                   |  |  |  |
@@ -42,6 +46,8 @@ Comparison
 | 29    | B-model |  |  |  |
 | 30    | Wheel-and-spoke Model |  |  |  |
 | 31    | Lean Development (LD) |  |  |  |
+| 31    | Kanban |  |  |  |
+| 31    | Feature driven development |  |  |  |
 
 Summary
 -------
