@@ -1,6 +1,6 @@
 import json
 import csv
-FIELD_NAMES = ["name", "objective", "reference", "pros", "cons", "example"]
+FIELD_NAMES = ["id", "name", "objective", "pros", "cons", "example", "images", "references"]
 with open("data.json", "r") as f:
     content = json.load(f)
 
