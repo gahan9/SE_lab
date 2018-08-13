@@ -1,224 +1,484 @@
 {
-  "practical": "1",
+  "practical": 1,
+  "title": "To study and compare various software process models",
+  "references":[
+    "https://www.researchgate.net/figure/Sashimi-waterfall-model-with-overlapping-phases-4_fig4_267711880",
+    "http://www.thomasalspaugh.org/pub/fnd/softwareProcess.html#Sashimi",
+    "https://www.workflowmax.com/blog/choose-your-project-management-methodology-pros-and-cons-of-agile-waterfall-prism-and-more",
+    "https://medium.com/globalluxsoft/5-popular-software-development-models-with-their-pros-and-cons-12a486b569dc",
+    "https://acodez.in/12-best-software-development-methodologies-pros-cons/#Agile_Software_Development_Methodology",
+    "https://www.scribd.com/document/117108705/Sashimi-Waterfall-Software-Development-Process-Eunice",
+    "https://www.codeproject.com/Articles/604417/Agile-software-development-methodologies-and-how-t",
+    "",
+    "",
+    "",
+    ""
+  ],
   "process_models": [
     {
+      "id": 1,
+      "name": "Waterfall Model",
+      "objective": "(first introduced)Sequential Phases of software development;",
+      "pros": "simple to adapt; best suitable for small projects / very clear requirements; easier to test and analyze",
+      "cons": "Only matches precise needs; requirements unclear because end-user/client can't see the working software (blurry requirements); high cost for implementing creative work after adapted; hard to estimate/predict cost, deadline, limitation; can't apply to maintenance project",
+      "images":[
+        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-waterfallSimple.png",
+        "https://cdn.acodez.in/wp-content/uploads/2015/07/waterfall-model.jpg",
+        "https://www.codeproject.com/KB/architecture/604417/waterfal.png"
+      ],
+      "references":[
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Royce's final model**",
+      "objective": "improvised waterfall model; feedback->design->requirement",
+      "pros": "overlapping of stage is possible according to feedback from client",
+      "cons": "",
+      "images":[
+        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-waterfallFeedback.png"
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 3,
+      "name": "The Sashimi Model",
+      "objective": "waterfall model with overlapping phases; most appropriate for medium-sized projects",
+      "pros": "implementation issue might be discovered during design and implementation",
+      "cons": "rework needed if requirement changes after design or coding",
+      "images":[
+        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-sashimi.png"
+      ],
+      "references": [
+        "http://www.thomasalspaugh.org/pub/fnd/softwareProcess.html#Sashimi"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Plan Driven Development",
+      "objective": "project success directly depends on how the plan is followed and requirement stability; ",
+      "pros": "less cost to requirement changes before design",
+      "cons": "costly to adapt to changes after design; highly dependent on requirement stability",
+      "images": [
+        "https://www.codeproject.com/KB/architecture/604417/PlanVsAgile.PNG"
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Prototyping",
+      "objective": "initial prototype developed to validate requirements, identify problems and solution for the problems",
+      "pros": "possible to determine clear idea about functional process of software/product; low failure risk in software functionality",
+      "cons": "over threshold involvement of client can affect development process; too many changes(patches) affect system flow(i.e. might become hard to debug after too many patches)",
+      "images": [
+        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-prototyping.png",
+        "https://cdn.acodez.in/wp-content/uploads/2015/07/prototype-methodology.jpg"
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Incremental Development",
+      "objective": "evolving software from initial implementation to operational software with several versions of user feedback",
+      "pros": "user can validate system with respect to requirements delivery at early stages",
+      "cons": "later stages might become costlier in adapting changes as previous/existing system modules becomes degraded; due addition of new features, system architecture might face issue which may not exist in earlier stages",
+      "images": [
+        "https://cdn-images-1.medium.com/max/800/1*Pk-2Y3VE1UYzVutv3WkHZQ.png"
+      ],
+      "references": [
+        "https://medium.com/omarelgabrys-blog/software-engineering-software-process-and-software-process-models-part-2-4a9d06213fdc",
+        "https://en.wikipedia.org/wiki/Incremental_build_model"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Spiral",
+      "objective": "cyclical model; producing prototype in each cycle for testing and risk analysis until software is operational (as per requirements/desire)",
+      "pros": "risk factors are reduced; suitable for large/complex projects; additional feature can be introduced",
+      "cons": "costly model for development; final operational may starve as cycle may continue; project can be compromised if failed to evaluate risk analysis properly",
+      "images": [
+        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-spiral0.png",
+        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-spiralBoehm.png",
+        "https://cdn-images-1.medium.com/max/800/1*F7eina8mDbPJ2XdjmkAoJw.jpeg"
+      ],
+      "references":[
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Agile development",
+      "objective": "fast catching up and flexible; targets tech industry, people and collaboration within; focuses on adapting changes and fast turnaround",
+      "pros": "suitable for creative projects; easy to adapt creative ideas in existing framework/design; transparency maintains",
+      "cons": "only focus on software work impact on documentation efficiency; path can be diverged as outcome seem unclear",
+      "images": [
+        "https://www.codeproject.com/KB/architecture/604417/agilesuccess.png",
+        "https://www.codeproject.com/KB/architecture/604417/agilevswater.jpg",
+        "https://www.codeproject.com/KB/architecture/604417/planvsagileNext.png",
+        "https://www.codeproject.com/KB/architecture/604417/ability_to_change.PNG",
+        "https://www.codeproject.com/KB/architecture/604417/visibility.PNG"
+      ],
+      "references": [
+        "https://www.codeproject.com/Articles/604417/Agile-software-development-methodologies-and-how-t",
+        "https://acodez.in/12-best-software-development-methodologies-pros-cons/#Agile_Software_Development_Methodology"
+        ]
+    },
+    {
+      "id": 9,
+      "name": "Rapid application development (RAD)",
+      "objective": "primary focus on providing quick results; a better development process with support of other development approaches",
+      "pros": "effortless development process; quickly reviewable; ensures client inputs and feedback",
+      "cons": "depends on overall team performance; requires person with highly adequate knowledge and skills; not suitable for small budget project",
+      "images": [
+        "https://cdn.acodez.in/wp-content/uploads/2015/07/rapid-application-development.jpg"
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Dynamic Software Development Method (DSDM)",
+      "objective": "derived from RAD; iterative + incremental; focuses on end-user/client involvement; primary focus on system development in deadline and allocated budget",
+      "pros": "quick delivery of module(functionality); easy access to end user; determine project outcome earlier",
+      "cons": "expensive implementation; not possible to adapt by small organization; ",
+      "images": [
+        "https://cdn.acodez.in/wp-content/uploads/2015/07/dynamic-system-development-model-methodology.jpg",
+        "http://www.codeproject.com/KB/architecture/dsdm/d1.jpg",
+        "http://dsdmofagilemethodology.wikidot.com/local--files/start/ass11.PNG"
+      ],
+      "references": [
+        "http://dsdmofagilemethodology.wikidot.com"
+      ]
+    },
+    {
+      "id": 11,
       "name": "Continuous integration",
       "objective": "developers work as community and integrate/merge code in shared repository; build/merged changes are tested by automated software",
       "pros": "increase workflow process and saves time and effort(code break); bugs and defects can be detected earlier; reduces manual testing effort",
       "cons": "some typo mistake can be reveal to end user if it is deployed without manual verification",
-      "reference": "https://codeship.com/continuous-integration-essentials"
+      "images": [
+      ],
+      "references": [
+        "https://codeship.com/continuous-integration-essentials"
+      ]
     },
     {
+      "id": 12,
       "name": "Continuous Deployment",
       "objective": "Continuous integration with automated deployment if codebase passes all test cases",
       "example": "Linux Development, Kodi Development, etc.",
       "pros": "No need of manual deployment; bugs and defects can be detected earlier; quick feedback of system for business",
       "cons": "some typo mistake reveal to end user as soon as it is deployed",
-      "reference": "https://codeship.com/continuous-integration-essentials"
+      "images": [
+      ],
+      "references": [
+        "https://codeship.com/continuous-integration-essentials"
+      ]
     },
     {
-      "name": "Waterfall Model",
-      "objective": "Sequential Phases of software development;",
-      "pros": "",
-      "cons": ""
+      "id": 13,
+      "name": "Extreme Programming (XP)",
+      "objective": "accentuate teamwork (pair programming); responsive to changing requirements (continuous integration); frequent releases in short development cycles; code refactor, Planning; regular(daily) communication",
+      "pros": "improve productivity; new requirements can be easily adopted; focuses on user feedback and involvement",
+      "cons": "efficiency depends on involved people; future possibilities and outcome are unknown; requires regular communication/meeting raises cost",
+      "images": [
+        "https://cdn.acodez.in/wp-content/uploads/2015/07/extreme-programing-methodology.jpg",
+        "https://www.codeproject.com/KB/architecture/604417/XPExt.PNG",
+        "https://www.codeproject.com/KB/architecture/604417/circles-new.png"
+      ],
+      "references": [
+        "http://www.extremeprogramming.org/",
+        "https://www.codeproject.com/Articles/604417/Agile-software-development-methodologies-and-how-t"
+      ]
     },
     {
+      "id": 14,
+      "name": "Scrum",
+      "objective": "incremental+agile; focuses on short or quick deadline delivery of product; ",
+      "pros": "rapid feedback and quick response to changes; good productivity with adapting changes of requirements and feature; with every iterative feedback/meet/testing non-desire feature/bugs can be fixed easily",
+      "cons": "as regular changes adapted and integrated project might not be well documented; require more experience of project handling; time frames might extended frequently to adapt changes",
+      "images": [
+        "https://www.codeproject.com/KB/architecture/604417/ScrumPrinciples.png",
+        "https://cdn.acodez.in/wp-content/uploads/2015/07/scrum-development-methodology.jpg"
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Iterative Development",
+      "objective": "building small modules of all featured project; build project quickly for user feedback",
+      "pros": "flexibility for changes; potential bugs/issues can be fixed at earlier stages; progress can be easily tracked",
+      "cons": "might require more amount of resource; hard to determine deadline; require trained and skilled person for risk analysis",
+      "images": [
+        "https://cdn-images-1.medium.com/max/800/1*1HK3LKCgnPIU2xQgbcl9pQ.png"
+      ],
+      "references": [
+        "https://www.dcslsoftware.com/pros-cons-iterative-software-development/"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Feature Driven Development",
+      "objective": "focused on serving large number of teams; suitable for large project",
+      "pros": "successive progress in large projects; supports continuous update in project",
+      "cons": "not suitable for small projects/single person; documentation barely maintained; doesn't guarantee deadline; much more dependable on leading developer",
+      "images": [
+        "https://cdn.acodez.in/wp-content/uploads/2015/07/unnamed.jpg"
+      ],
+      "references": [
+        "http://agilemodeling.com/essays/fdd.htm"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Reuse-oriented Software Engineering",
+      "objective": "utilizing existing codebase similar to requirement;",
+      "pros": "system delivery can be quicker; ",
+      "cons": "limited scopes; dependency issue may rise",
+      "images": [
+        "https://cdn-images-1.medium.com/max/800/1*4UX3247GjW03wpNDCck5TQ.png"
+      ],
+      "references": [
+        "https://medium.com/omarelgabrys-blog/software-engineering-software-process-and-software-process-models-part-2-4a9d06213fdc"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Critical Chain / Path",
+      "objective": "focuses to solve resource issues and design for teams of people with flexible skills; determine core element and deadline on its basis",
+      "pros": "easy to collaborate; tracking and managing resources and developer is easier",
+      "cons": "each stage plan may extend timeline hence might not suite to small projects",
+      "images": [
+      ],
+      "references": [
+        "https://www.workflowmax.com/blog/choose-your-project-management-methodology-pros-and-cons-of-agile-waterfall-prism-and-more"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Projects integrating Sustainable Methods (PRiSM)",
+      "objective": "focuses to account environmental factors; developed by GPM Global; used at large-scale construction(real-estate) projects",
+      "pros": "shows client about seriousness of developer related to environmental factors",
+      "cons": "can't work in isolation",
+      "images": [
+      ],
+      "references": [
+        "https://www.workflowmax.com/blog/choose-your-project-management-methodology-pros-and-cons-of-agile-waterfall-prism-and-more"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Projects IN Controlled Environments (PRINCE2)",
+      "objective": "de facto standard(convention) used by the UK government since 1996; process oriented; each stage with it's own plan; ",
+      "pros": "heavily documented; suitable for corporate entities",
+      "cons": "it'll take amount of time to adapt changes (due to heavily documented)",
+      "images": [
+      ],
+      "references": [
+        "https://www.workflowmax.com/blog/choose-your-project-management-methodology-pros-and-cons-of-agile-waterfall-prism-and-more"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Lean Development (LD)",
+      "objective": "empowering team to produce great results with delivering ton of value while producing little project waste*; ",
+      "pros": "low cost budget; good for short deadline and resource; team is motivated to produce perfect feature",
+      "cons": "depends on decision making (how quickly good decision are made); documentation needs to be precise",
+      "images": [
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Rational Unified Process (RUP)",
+      "objective": "Invented by Rational, a division of IBM; iterative waterfall (because it inherits best part of waterfall); 4 phases per project; 9 disciplines per phase[waterfall strategy to moving to next phase]",
+      "pros": "best of waterflow with iterative approach",
+      "cons": "too heavily relies on user feedback",
+      "images": [
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Event Chain Methodology",
+      "objective": "focuses on planning for potential risks; handles impact of external events on project;",
+      "pros": "allows to examine relationship between tasks and external pressures",
+      "cons": "sometimes beneficial external events might be considered as threat by project manager",
+      "images": [
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Kanban",
+      "objective": "steady stream of product delivery; continuous workflow",
+      "pros": "easy to track time",
+      "cons": "major variation in user requirements ",
+      "images": [
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     },
     {
+      "id": 31,
+      "name": "Six Sigma",
+      "objective": "management framework designed to be driven by data; developed my Motorola",
+      "pros": "ensures product is 99.99966% error free; suggests improvements before defects even appear",
+      "cons": "extremely rigid; limits creativity of developer",
+      "images": [
+      ],
+      "references": [
+        "https://www.workflowmax.com/blog/choose-your-project-management-methodology-pros-and-cons-of-agile-waterfall-prism-and-more"
+      ]
+    },
+    {
+      "id": null,
       "name": "",
       "objective": "",
       "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
-    },
-    {
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": ""
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
     }
   ]
 }
