@@ -38,6 +38,7 @@ Comparison
 | `00    | vee+ model               |  |  |  |
 | `00    | vee++ model               |  |  |  |
 | `00    | Wheel-and-spoke Model |  |  |  |
+| `00    | Joint Application Development |  |  |  |
 | 08    | Backlog          |  |  |  |
 | 08    | Leave-It development          |  |  |  |
 | 09    | Behavior-driven development   |  |  |  |
@@ -47,7 +48,6 @@ Comparison
 | 13    | Structured systems analysis and design method |  |  |  |
 | 15    | Unified Process               |  |  |  |
 | 16    | Stepwise Refinement           |  |  |  |
-| 17    | Joint Application Development |  |  |  |
 | 18    | Program Evolution Models      |  |  |  |
 | 19    | Software Production Process Models |  |  |  |
 | 20    | Non-Operational Process Models |  |  |  |

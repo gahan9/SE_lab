@@ -397,9 +397,9 @@
     {
       "id": 30,
       "name": "Wheel-and-spoke Model",
-      "objective": "based on spiral model; initially small teams; wheel represent development cycle",
-      "pros": "",
-      "cons": "",
+      "objective": "based on spiral model; initially small teams; wheel represent development cycle; best suitable for multiple projects with identical architecture/feature",
+      "pros": "negligible initial risk; scalable from small team and task to larger team depending on requirements; core code remains same hence code logic and quality will rise",
+      "cons": "best suitable for only backed and frontend",
       "images": [
         "https://image.ibb.co/cCtgd9/TOGAFs_ADM_as_a_wheel_and_spoke_model.png"
       ],
@@ -407,73 +407,18 @@
       ]
     },
     {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
-      "images": [
-      ],
-      "references": [
-      ]
-    },
-    {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
-      "images": [
-      ],
-      "references": [
-      ]
-    },
-    {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
-      "images": [
-      ],
-      "references": [
-      ]
-    },
-    {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
-      "images": [
-      ],
-      "references": [
-      ]
-    },
-    {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
-      "images": [
-      ],
-      "references": [
-      ]
-    },
-    {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
-      "images": [
-      ],
-      "references": [
-      ]
-    },
-    {
       "id": 31,
+      "name": "Joint Application Development (JAD)",
+      "objective": "collaborative development with customer/involving in design & development phases through workshops(JAD sessions)",
+      "pros": "feasible for any system development; speed up development and delivery; improves quality of final system",
+      "cons": "not cost effective (due to JAD sessions); lack of deadline; time commitment needs may not meet if multiple workshops relative to project size",
+      "images": [
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": 32,
       "name": "Six Sigma",
       "objective": "management framework designed to be driven by data; developed my Motorola",
       "pros": "ensures product is 99.99966% error free; suggests improvements before defects even appear",
@@ -482,6 +427,61 @@
       ],
       "references": [
         "https://www.workflowmax.com/blog/choose-your-project-management-methodology-pros-and-cons-of-agile-waterfall-prism-and-more"
+      ]
+    },
+    {
+      "id": null,
+      "name": "",
+      "objective": "",
+      "pros": "",
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": null,
+      "name": "",
+      "objective": "",
+      "pros": "",
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": null,
+      "name": "",
+      "objective": "",
+      "pros": "",
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": null,
+      "name": "",
+      "objective": "",
+      "pros": "",
+      "cons": "",
+      "images": [
+      ],
+      "references": [
+      ]
+    },
+    {
+      "id": null,
+      "name": "",
+      "objective": "",
+      "pros": "",
+      "cons": "",
+      "images": [
+      ],
+      "references": [
       ]
     },
     {
