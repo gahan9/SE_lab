@@ -31,6 +31,13 @@ Comparison
 | `00    | Iterative Development        |  |  |  |
 | `00    | Feature driven development |  |  |  |
 | `00    | Lean Development (LD) |  |  |  |
+| `00    | B-model |  |  |  |
+| `00    | Kanban |  |  |  |
+| `00    | Test-driven |  |  |  |
+| `00    | V-Model (software development)|  |  |  |
+| `00    | vee+ model               |  |  |  |
+| `00    | vee++ model               |  |  |  |
+| `00    | Wheel-and-spoke Model |  |  |  |
 | 08    | Backlog          |  |  |  |
 | 08    | Leave-It development          |  |  |  |
 | 09    | Behavior-driven development   |  |  |  |
@@ -38,7 +45,6 @@ Comparison
 | 11    | Incremental funding methodology |  |  |  |
 | 12    | Lightweight methodology       |  |  |  |
 | 13    | Structured systems analysis and design method |  |  |  |
-| 14    | V-Model (software development)|  |  |  |
 | 15    | Unified Process               |  |  |  |
 | 16    | Stepwise Refinement           |  |  |  |
 | 17    | Joint Application Development |  |  |  |
@@ -53,9 +59,6 @@ Comparison
 | 27    | Capability Maturity Model (CMM) |  |  |  |
 | 27    | Capability Maturity Model Integration (CMMI) |  |  |  |
 | 28    | Systems modeling |  |  |  |
-| 29    | B-model |  |  |  |
-| 30    | Wheel-and-spoke Model |  |  |  |
-| 31    | Kanban |  |  |  |
 
 Summary
 -------
