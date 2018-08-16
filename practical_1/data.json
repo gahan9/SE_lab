@@ -333,15 +333,14 @@
     },
     {
       "id": 25,
-      "name": "Test-driven",
-      "objective": "all iteration defined by a new test; expects new test fail so that new features implemented and fixed so that it works with old features",
-      "pros": "improved stability of system; system is well tested and documented",
-      "cons": "it takes more effort and time while writing test; require code refactor continuously",
+      "name": "Chaos model",
+      "objective": "attempt towards fixing deadline management issues while fixing bugs and odds of system; problems are divided into levels; upper level -> users' need & bottom level -> define technical resource",
+      "pros": "flexible & iterative ; ",
+      "cons": "high complexity to use and implement",
       "images": [
-        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-testDriven.png"
       ],
       "references": [
-        "http://www.thomasalspaugh.org/pub/fnd/softwareProcess.html#Test-driven"
+        "http://delivery.acm.org/10.1145/230000/225914/p55-wing.pdf"
       ]
     },
     {
@@ -431,25 +430,39 @@
     },
     {
       "id": 33,
-      "name": "Chaos model",
-      "objective": "attempt towards fixing deadline management issues while fixing bugs and odds of system; problems are divided into levels; upper level -> users' need & bottom level -> define technical resource",
-      "pros": "flexible & iterative ; ",
-      "cons": "high complexity to use and implement",
+      "name": "Test Driven Development (TDD)",
+      "objective": "all iteration defined by a new test; expects new test fail so that new features implemented and fixed so that it works with old features",
+      "pros": "improved stability of system; system is well tested and documented",
+      "cons": "it takes more effort and time while writing test; require code refactor continuously; only few member of team uses TDD",
       "images": [
+        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-testDriven.png"
       ],
       "references": [
-        "http://delivery.acm.org/10.1145/230000/225914/p55-wing.pdf"
+        "http://www.thomasalspaugh.org/pub/fnd/softwareProcess.html#Test-driven"
       ]
     },
     {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
+      "id": 34,
+      "name": "Acceptance Test Driven Development (ATDD)",
+      "objective": "involves members from different point of view in team to collaborate and write acceptance test; acceptance test act as form of requirements (customer -> what to solve? | Developer -> how to solve | testing -> what about..)",
+      "pros": "provides interfaces specific to functional testing (without testing through actual UI)",
+      "cons": "rely on some specific tools",
+      "images": [
+      ],
+      "references": [
+        "https://www.agilealliance.org/glossary/atdd"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Behaviour Driven Development (BDD)",
+      "objective": "extension to TDD and ATDD with specification by example;  ",
+      "pros": "also suitable to organizational level",
       "cons": "",
       "images": [
       ],
       "references": [
+        "https://www.agilealliance.org/glossary/bdd"
       ]
     },
     {
