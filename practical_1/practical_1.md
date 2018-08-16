@@ -41,13 +41,14 @@ Comparison
 | `00    | Wheel-and-spoke Model |  |  |  |
 | `00    | Joint Application Development |  |  |  |
 | `00    | Chaos model                   |  |  |  |
+| `00    | Behavior-driven development   |  |  |  |
+| `00    | Capability Maturity Model (CMM) |  |  |  |
+| 27    | Capability Maturity Model Integration (CMMI) |  |  |  |
 | 08    | Backlog          |  |  |  |
 | 08    | Leave-It development          |  |  |  |
-| 09    | Behavior-driven development   |  |  |  |
 | 11    | Incremental funding methodology |  |  |  |
 | 12    | Lightweight methodology       |  |  |  |
 | 13    | Structured systems analysis and design method |  |  |  |
-| 15    | Unified Process               |  |  |  |
 | 16    | Stepwise Refinement           |  |  |  |
 | 18    | Program Evolution Models      |  |  |  |
 | 19    | Software Production Process Models |  |  |  |
@@ -57,8 +58,6 @@ Comparison
 | 23    | Executable UML                 |  |  |  |
 | 24    | Enterprise Unified Process     |  |  |  |
 | 26    | ISO/IEC 15504(Software Process Improvement and Capability Determination (SPICE)) |  |  |  |
-| 27    | Capability Maturity Model (CMM) |  |  |  |
-| 27    | Capability Maturity Model Integration (CMMI) |  |  |  |
 | 28    | Systems modeling |  |  |  |
 
 Summary

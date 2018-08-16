@@ -457,34 +457,39 @@
       "id": 35,
       "name": "Behaviour Driven Development (BDD)",
       "objective": "extension to TDD and ATDD with specification by example;  ",
-      "pros": "also suitable to organizational level",
+      "pros": "also suitable and more precise at organizational level; target BDD tool (i.e. FitNesse) support generating technical and end-user document automatically; low cost and risk; eay to undo",
       "cons": "",
       "images": [
       ],
       "references": [
-        "https://www.agilealliance.org/glossary/bdd"
+        "https://www.agilealliance.org/glossary/bdd",
+        "https://medium.com/@TechMagic/get-started-with-behavior-driven-development-ecdca40e827b"
       ]
     },
     {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
+      "id": 36,
+      "name": "Capability Maturity Model (CMM)",
+      "objective": "developed by Software Engineering Institute (SEI), R&D center sponsored by the U.S. Dept. of Defense (DoD); similar to ISO 9001; framework establishment for continuous process improvement; ",
+      "pros": "five-level evolutionary organized and systematic path; optimize development, acquire, and maintain large-scale software-reliant systems",
+      "cons": "costly process; not suitable for small organization; require leader with adequate field knowledge",
       "images": [
       ],
       "references": [
+        "https://searchsoftwarequality.techtarget.com/definition/Capability-Maturity-Model"
       ]
     },
     {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
+      "id": 37,
+      "name": "Capability Maturity Model Integration (CMMI)",
+      "objective": "meet challenges to trending global business; focused on improving usability of maturity models by integrating various different models into single framework",
+      "pros": "trending process model to satisfy new technology/functionality; Appraisals of organizations using a CMMI model",
+      "cons": "high cost (In March 2018 CMMI 2.0 introduced at minimum price of US$150.00)",
       "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Characteristics_of_Capability_Maturity_Model.svg/500px-Characteristics_of_Capability_Maturity_Model.svg.png"
       ],
       "references": [
+        "https://cmmiinstitute.com/capability-maturity-model-integration",
+        "https://en.wikipedia.org/wiki/Capability_Maturity_Model_Integration"
       ]
     },
     {
