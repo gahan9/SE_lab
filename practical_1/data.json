@@ -430,14 +430,15 @@
       ]
     },
     {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
+      "id": 33,
+      "name": "Chaos model",
+      "objective": "attempt towards fixing deadline management issues while fixing bugs and odds of system; problems are divided into levels; upper level -> users' need & bottom level -> define technical resource",
+      "pros": "flexible & iterative ; ",
+      "cons": "high complexity to use and implement",
       "images": [
       ],
       "references": [
+        "http://delivery.acm.org/10.1145/230000/225914/p55-wing.pdf"
       ]
     },
     {

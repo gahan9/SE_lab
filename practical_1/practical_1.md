@@ -40,10 +40,10 @@ Comparison
 | `00    | vee++ model               |  |  |  |
 | `00    | Wheel-and-spoke Model |  |  |  |
 | `00    | Joint Application Development |  |  |  |
+| `00    | Chaos model                   |  |  |  |
 | 08    | Backlog          |  |  |  |
 | 08    | Leave-It development          |  |  |  |
 | 09    | Behavior-driven development   |  |  |  |
-| 10    | Chaos model                   |  |  |  |
 | 11    | Incremental funding methodology |  |  |  |
 | 12    | Lightweight methodology       |  |  |  |
 | 13    | Structured systems analysis and design method |  |  |  |
