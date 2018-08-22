@@ -105,7 +105,6 @@
       "cons": "costly model for development; final operational may starve as cycle may continue; project can be compromised if failed to evaluate risk analysis properly",
       "images": [
         "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-spiral0.png",
-        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-spiralBoehm.png",
         "https://cdn-images-1.medium.com/max/800/1*F7eina8mDbPJ2XdjmkAoJw.jpeg"
       ],
       "references":[
