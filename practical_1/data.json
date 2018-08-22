@@ -9,7 +9,7 @@
     "https://acodez.in/12-best-software-development-methodologies-pros-cons/#Agile_Software_Development_Methodology",
     "https://www.scribd.com/document/117108705/Sashimi-Waterfall-Software-Development-Process-Eunice",
     "https://www.codeproject.com/Articles/604417/Agile-software-development-methodologies-and-how-t",
-    "",
+    "https://www.tutorialride.com/software-testing/software-development-process-models.htm",
     "",
     "",
     ""
@@ -88,11 +88,13 @@
       "cons": "later stages might become costlier in adapting changes as previous/existing system modules becomes degraded; due addition of new features, system architecture might face issue which may not exist in earlier stages",
       "images": [
         "https://cdn-images-1.medium.com/max/800/1*Pk-2Y3VE1UYzVutv3WkHZQ.png",
-        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-incremental.png"
+        "http://www.thomasalspaugh.org/pub/fnd/img/softwareProcess-incremental.png",
+        "https://www.tutorialride.com/images/software-testing/incremental-process.jpg"
       ],
       "references": [
         "https://medium.com/omarelgabrys-blog/software-engineering-software-process-and-software-process-models-part-2-4a9d06213fdc",
-        "https://en.wikipedia.org/wiki/Incremental_build_model"
+        "https://en.wikipedia.org/wiki/Incremental_build_model",
+        "https://www.tutorialride.com/software-testing/software-development-process-models.htm"
       ]
     },
     {
@@ -493,25 +495,55 @@
       ]
     },
     {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
-      "cons": "",
+      "id": 38,
+      "name": "Big-Bang Model",
+      "objective": "no predefined process is followed; it only requires some planning and need not to follow formal development;",
+      "pros": "simple; low budget; suitable for small team and project; suitable for academic project, students or new comers",
+      "cons": "risk is very high; not suitable for long and complex project; the output developed prototype/product does not guarantee initial requirements to be met",
       "images": [
+        "https://www.tutorialride.com/images/software-testing/big-bang-bodel.jpg"
+      ],
+      "references": [
+        "https://www.tutorialride.com/software-testing/software-development-process-models.htm"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Code and Fix Model",
+      "objective": "it adds testing to big bang model; testing team/developer test the prototype and sends for fixes until it meets the requirement",
+      "pros": "no burden of project planning; suitable for small project; ",
+      "cons": "Quality assessment is difficult; timeframe for release are not clear; hard to adopt requirement changes",
+      "images": [
+        "https://www.tutorialride.com/images/software-testing/flow-code-fix-model.jpg",
+        "https://www.tutorialride.com/images/software-testing/code-fix-model-1.jpg"
       ],
       "references": [
       ]
     },
     {
-      "id": null,
-      "name": "",
-      "objective": "",
-      "pros": "",
+      "id": 40,
+      "name": "Enterprise Unified Process (EUP)",
+      "objective": "extended variant of UP(Unified Process) to fulfill lack of production and retirement of software system; embedded to life cycle of organization itself",
+      "pros": "growing model(growing to Disciplined agile delivery (DAD)); higher quality; high adaptability; seen as end-user point of view",
       "cons": "",
       "images": [
+        "http://enterpriseunifiedprocess.com/images/eup_lifecycle_2013.jpg"
       ],
       "references": [
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Disciplined agile delivery (DAD) - process decision framework",
+      "objective": "incremental and iterative delivery of product; grown from Enterprise Unified Process (EUP); developed after 2013 with adopting best from many development process like agile/scrum/lean/etc.; ",
+      "pros": "2nd generation framework; end-to-end method for agile delivery; hybrid agile; high scalability; goal driven; enterprise level; provides more affilated approach to agile software development; fills the gaps ignored by scrum; capable at enterprise level scale ",
+      "cons": "",
+      "images": [
+        "http://enterpriseunifiedprocess.com/images/eup_lifecycle_2013.jpg"
+      ],
+      "references": [
+        "https://www.ibm.com/developerworks/community/blogs/ambler/entry/disciplined_agile_delivery?lang=en",
+        "Scott Ambler developed the disciplined agile development process during his time as chief methodologist for IT at IBM Rational (Summer 2006 to Summer 2012)"
       ]
     }
   ]

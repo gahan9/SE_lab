@@ -43,7 +43,9 @@ Comparison
 | `00    | Chaos model                   |  |  |  |
 | `00    | Behavior-driven development   |  |  |  |
 | `00    | Capability Maturity Model (CMM) |  |  |  |
-| 27    | Capability Maturity Model Integration (CMMI) |  |  |  |
+| `00    | Capability Maturity Model Integration (CMMI) |  |  |  |
+| `00    | Big-Bang Model |  |  |  |
+| `00    | code and fix                   |  |  |  |
 | 08    | Backlog          |  |  |  |
 | 08    | Leave-It development          |  |  |  |
 | 11    | Incremental funding methodology |  |  |  |
@@ -54,7 +56,6 @@ Comparison
 | 19    | Software Production Process Models |  |  |  |
 | 20    | Non-Operational Process Models |  |  |  |
 | 21    | Operational Process Models     |  |  |  |
-| 22    | code and fix                   |  |  |  |
 | 23    | Executable UML                 |  |  |  |
 | 24    | Enterprise Unified Process     |  |  |  |
 | 26    | ISO/IEC 15504(Software Process Improvement and Capability Determination (SPICE)) |  |  |  |
