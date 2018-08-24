@@ -1,9 +1,17 @@
 \documentclass{scrreprt}
 \usepackage{listings}
+%Load the package
+\usepackage[
+nonumberlist, %do not show page numbers
+acronym,      %generate acronym listing   -> Not used in this example (see line with %%% )
+toc,          %show listings as entries in table of contents
+section]      %use section level for toc entries
+{glossaries}
 \usepackage{underscore}
 \usepackage[bookmarks=true]{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+\usepackage{hyperref}
 \hypersetup{
     bookmarks=false,    % show bookmarks bar?
     pdftitle={Software Requirement Specification},    % title
@@ -21,7 +29,29 @@
 \date{}
 \title{Generic Web Portal (SaaS)}
 
-\usepackage{hyperref}
+% abbreviations:
+\newacronym{ny}{NY}{New York}
+\newacronym{la}{LA}{Los Angeles}
+\newacronym{un}{UN}{United Nations}
+
+% nomenclature:
+\newglossaryentry{angelsperarea}{
+	name = $a$ ,
+	description = The number of angels per unit area,
+}
+\newglossaryentry{numofangels}{
+	name = $N$ ,
+	description = The number of angels per needle point
+}
+\newglossaryentry{areaofneedle}{
+	name = $A$ ,
+	description = The area of the needle point
+}
+
+\makeglossaries
+
+%Load nomenclature and glossary files
+%\loadglsentries{glossary}
 \begin{document}
 
 \begin{flushright}
@@ -61,13 +91,33 @@
 \end{center}
 
 \chapter{Introduction}
+\label{introduction}
 
 \section{Purpose}
+\label{purpose}
 This project targets the generic implementation of web portal so that any user can deploy their client-server architecture.
 The project is capable of deploying any e-commerce/management system with just following few simple steps in wizard.
 
 \section{Project Scope}
-This Generic Web Portal is a Software as a Service where user just needs to to enter few related information and the web service for related system (i.e. stock/inventory management, ) will be deployed.
+\label{scope}
+This Generic Web Portal is a "Software as a service" for user or a company who wants to launch their e-commerce site or a management portal for item/product sales, purchase, accounting etc. This generic service helps stakeholders to launch it in just few steps such as some required information, policy agreement and payment to launch the desire service platform of their own. \\
+Here to make the system generic all the products are treated like object as if in book store books are considered as  objects having their properties unique (ISBN) and non-unique(Author, Title, Publisher, etc). similarly if it is for hotel management system rooms are treated as an object having their unique properties like room number or assigned id and non-unique properties such as availability, facility, floor, etc. Hence just by interpreting each product of real world as an object and treating it's use as a transaction.
+\\
+Also the system is meant to follow disciplined agile delivery such that it will be compatible to adapt new requirements and/or changes with the help of support option such that a company or user can deploy a new system of their own instead of using generic platform.
+
+\section{Definitions, acronyms, and abbreviations}
+\label{acronyms}
+
+
+
+%Print the glossary
+\printglossary[style=altlist,title=Glossary]
+
+
+\printglossary[title=Nomenclature]
+
+
+
 
 \section{References}
 $<$List any other documents or Web addresses to which this SRS refers. These may 
