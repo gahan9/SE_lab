@@ -1,19 +1,23 @@
 \documentclass{scrreprt}
 \usepackage{listings}
-\usepackage{underscore, titling}
-\usepackage[bookmarks=true]{hyperref}
+\usepackage{underscore}
+\usepackage{bbding}  % to use custom itemize font
+\usepackage{titling}  % to use \theauthor (author and title name seperately)
+\usepackage[shortlabels]{enumitem}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-%\usepackage{hyperref}
-\usepackage{graphicx, subfig, graphics, float, flowchart}
-\usepackage{array}
-\graphicspath{ {figures/} }
+\usepackage{graphicx, subfig, graphics, flowchart}
+\usepackage{float}  % perfect fit graphic with command [H]
+\usepackage{array}  % for list of figures
+\graphicspath{ {figures/} }  % define graphicspath list out tabel of figures
+\usepackage{hyperref}
+% set up
 \hypersetup{
-%    bookmarks=false,    % show bookmarks bar?
+    bookmarks=false,    % show bookmarks bar?
     pdftitle={Software Requirement Specification},    % title
-    pdfauthor={Jean-Philippe Eisenbarth},                     % author
-    pdfsubject={TeX and LaTeX},                        % subject of the document
-    pdfkeywords={TeX, LaTeX, graphics, images}, % list of keywords
+    pdfauthor={Gahan Saraiya},                     % author
+    pdfsubject={SRS for SaaS (generic web portal)}, % subject of the document
+    pdfkeywords={TeX, LaTeX, graphics, images, generic, web portal, SaaS, PaaS}, % list of keywords
     colorlinks=true,       % false: boxed links; true: colored links
     linkcolor=blue,       % color of internal links
     citecolor=black,       % color of links to bibliography
@@ -21,7 +25,17 @@
     urlcolor=purple,        % color of external links
     linktoc=page            % only page is linked
 }
+
+% alterante itemize command
+\newcommand*\tick{\item[\Checkmark]}
+\newcommand*\arrow{\item[$\Rightarrow$]}
+\newcommand*\fail{\item[\XSolidBrush]}
 \def\myversion{1.0 }
+\def\university{Institute of Technology, \\Nirma University}
+\def\superuser{Platform Administrator}
+\def\admin{Administrator}
+\def\staff{Staff user}
+\def\user{End User}
 \date{}
 \title{Generic Web Portal (SaaS)}
 \author{Gahan Saraiya}
@@ -38,21 +52,20 @@
         \vspace{1.9cm}
         \thetitle\\
         \vspace{1.9cm}
-        \LARGE{Version \myversion approved}\\
+        \LARGE{Version \myversion}\\
         \vspace{1.9cm}
         Prepared by \theauthor (18MCEC10)\\
         \vspace{1.9cm}
-        Institute of Technology,\\Nirma University\\
+        \university\\
         \vspace{1.9cm}
         \today\\
     \end{bfseries}
 \end{flushright}
 
-\tableofcontents
-\listoffigures
+\tableofcontents  % list out index for all chapters
+\listoffigures  % list out index for figures
 
 \chapter*{Revision History}
-
 \begin{center}
     \begin{tabular}{|c|c|c|c|}
         \hline
@@ -62,6 +75,7 @@
         \hline
     \end{tabular}
 \end{center}
+
 \chapter{Introduction}
 \label{introduction}
 
@@ -179,45 +193,74 @@ The end-user might have to allow additional access to the camera or flash plugin
 	\item client-server communication established over HTTP
 \end{itemize}
 
-
 \chapter{System Features}
-$<$This template illustrates organizing the functional requirements for the 
-product by system features, the major services provided by the product. You may 
-prefer to organize this section by use case, mode of operation, user class, 
-object class, functional hierarchy, or combinations of these, whatever makes the 
-most logical sense for your product.$>$
-
-\section{System Feature 1}
-$<$Don’t really say “System Feature 1.” State the feature name in just a few 
-words.$>$
-
-\subsection{Description and Priority}
-$<$Provide a short description of the feature and indicate whether it is of 
-High, Medium, or Low priority. You could also include specific priority 
-component ratings, such as benefit, penalty, cost, and risk (each rated on a 
-relative scale from a low of 1 to a high of 9).$>$
-
-\subsection{Stimulus/Response Sequences}
-$<$List the sequences of user actions and system responses that stimulate the 
-behavior defined for this feature. These will correspond to the dialog elements 
-associated with use cases.$>$
-
-\subsection{Functional Requirements}
-$<$Itemize the detailed functional requirements associated with this feature.  
-These are the software capabilities that must be present in order for the user 
-to carry out the services provided by the feature, or to execute the use case.  
-Include how the product should respond to anticipated error conditions or 
-invalid inputs. Requirements should be concise, complete, unambiguous, 
-verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary 
-information is not yet available.$>$
-
-$<$Each requirement should be uniquely identified with a sequence number or a 
-meaningful tag of some kind.$>$
-
-REQ-1:	REQ-2:
-
-\section{System Feature 2 (and so on)}
-
+\section{Functional Requirements}
+\label{functions}
+\subsection{\admin's Requirement}
+\begin{enumerate}[start=1,label={\bfseries REQ \arabic*:}]
+	\addtolength{\itemindent}{40pt}
+	\item Login
+		\\To login into system valid email address and strong password is required
+	\item Sign Up
+		\\ \admin\space can register to deploy the web service which require below basic information:
+		\begin{itemize}
+			\arrow Valid Email address
+			\arrow Strong Password
+			\arrow Name
+			\arrow Mobile Number
+			\arrow Select service plan
+			\arrow Mailing address
+			\arrow payment
+		\end{itemize}
+		Upon successful registration record will be stored in database and email verification link will be sent to register email address.
+	\item Profile Management
+		\\ \admin s can update their profile information anytime
+		\\All fields except email address are updatable
+		\\Changes will be reflected in database when \admin \space updates the information
+		\\ \admin can also add other optional field information such as alternate address, contact number, profile image
+	\item Customize Database/service dashboard
+		\\ \admin \space can follow documentation to add/change existing database fields or tables
+	\item Credential Recovery
+		\\If \admin \space is not remembering password for accessing system a password reset email will be send if require 
+	\item Create staff user
+		\\At organization level there might be one or more people assigned the different task to manage and for that purpose sharing the ownership credential is risky as well as hard to track activity of each staff hence \admin \space can create \staff \space and assign them different accessible permission to the dashboard
+	\item Activity Log
+		\\All the sensitive dashboard activity logged 
+	\item Report Generation
+		\\User can generate report in json or pdf format for record(s)
+	\item Invoice Generation
+		\\For any sale record Taxable Invoice can be generated in pdf format
+	\item Support and Maintenance
+		\\For any trouble or inquiry \admin \space can contact support team
+	
+\end{enumerate}
+\subsection{\user's Requirement}
+\begin{enumerate}[start=1,label={\bfseries REQ \arabic*:}]
+	\addtolength{\itemindent}{40pt}
+	\item Login
+		\\To login into system valid email address and strong password is required
+	\item Sign Up
+		\\ \user \space can register to deploy the web service which require below basic information:
+			\begin{itemize}
+				\arrow Valid Email address
+				\arrow Strong Password
+				\arrow Name
+				\arrow Mobile Number
+				\arrow Select service plan
+				\arrow Mailing address
+				\arrow payment
+			\end{itemize}
+		Upon successful registration record will be stored in database and email verification link will be sent to register email address.
+	\item Profile Management
+		\\ \user s can update their profile information anytime
+		\\All fields except email address are updatable
+		\\Changes will be reflected in database when \user \space updates the information
+		\\ \user can also add other optional field information such as alternate address, contact number, profile image
+	\item Customize Database/service dashboard
+		\\ \user \space can follow documentation to add/change existing database fields or tables
+	\item Credential Recovery
+		\\If \user \space is not remembering password for accessing system a password reset email will be send if require 
+\end{enumerate}
 
 \chapter{Other Nonfunctional Requirements}
 
