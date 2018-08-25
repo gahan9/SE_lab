@@ -222,12 +222,14 @@ The end-user might have to allow additional access to the camera or flash plugin
 		\\ \admin \space can follow documentation to add/change existing database fields or tables
 	\item Credential Recovery
 		\\If \admin \space is not remembering password for accessing system a password reset email will be send if require 
-	\item Create staff user
+	\item Search and Manage record
+		\\ \admin \space can search any record for products, user and log and retrieve the detail 
+	\item Create \staff
 		\\At organization level there might be one or more people assigned the different task to manage and for that purpose sharing the ownership credential is risky as well as hard to track activity of each staff hence \admin \space can create \staff \space and assign them different accessible permission to the dashboard
 	\item Activity Log
 		\\All the sensitive dashboard activity logged 
 	\item Report Generation
-		\\User can generate report in json or pdf format for record(s)
+		\\ \admin \space can generate report, balance-sheet in json or pdf format for record(s)
 	\item Invoice Generation
 		\\For any sale record Taxable Invoice can be generated in pdf format
 	\item Support and Maintenance
@@ -259,33 +261,43 @@ The end-user might have to allow additional access to the camera or flash plugin
 	\item Customize Database/service dashboard
 		\\ \user \space can follow documentation to add/change existing database fields or tables
 	\item Credential Recovery
-		\\If \user \space is not remembering password for accessing system a password reset email will be send if require 
+		\\If \user \space is not remembering password for accessing system a password reset email will be sent on demand
+	\item conditional Search
+		\\ \user \space can able to search offered product or order history
+	\item Support
+		\\If \user \space faces any problem or query then \user \space needs to contact web service \admin \space or their support staff
 \end{enumerate}
 
 \chapter{Other Nonfunctional Requirements}
 
 \section{Performance Requirements}
-$<$If there are performance requirements for the product under various 
-circumstances, state them here and explain their rationale, to help the 
-developers understand the intent and make suitable design choices. Specify the 
-timing relationships for real time systems. Make such requirements as specific 
-as possible. You may need to state performance requirements for individual 
-functional requirements or features.$>$
-
-\section{Safety Requirements}
-$<$Specify those requirements that are concerned with possible loss, damage, or 
-harm that could result from the use of the product. Define any safeguards or 
-actions that must be taken, as well as actions that must be prevented. Refer to 
-any external policies or regulations that state safety issues that affect the 
-product’s design or use. Define any safety certifications that must be 
-satisfied.$>$
+\begin{enumerate}[start=1,label={\bfseries REQ \arabic*:}]
+	\addtolength{\itemindent}{40pt}
+	\item Platform level (affecting \superuser)
+		\\ Server or cloud service used by platform must be highly scalable as it is depended upon number of web service deployed and their web traffic.
+	\item Web Service Owner (\admin)
+		\\ Web \admin \space needs to intimate higher authority \superuser \space for expected high traffic due to upcoming promotional offer to avoid possible service disruption due to performance
+	\item \user \space level
+		\begin{itemize}
+			\arrow Internet Connection
+			\arrow Web Browser
+		\end{itemize}
+\end{enumerate}
 
 \section{Security Requirements}
-$<$Specify any requirements regarding security or privacy issues surrounding use 
-of the product or protection of the data used or created by the product. Define 
-any user identity authentication requirements. Refer to any external policies or 
-regulations containing security issues that affect the product. Define any 
-security or privacy certifications that must be satisfied.$>$
+
+\begin{enumerate}[start=1,label={\bfseries REQ \arabic*:}]
+	\addtolength{\itemindent}{40pt}
+	\item Privacy
+		\\ users can only access data which belongs to them or permitted
+	\item Authorization
+		\\ All page and URL must be available for only the user who has rights and permission to access it
+	\item Authentication
+		\\ unauthenticated users are not allowed to perform any transactional activity
+		\\ recovery option should use captcha for human verification before sending password reset link
+	\item platform should follow all OWASP guidelines
+		
+\end{enumerate}
 
 \section{Software Quality Attributes}
 $<$Specify any additional quality characteristics for the product that will be 
