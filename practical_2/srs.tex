@@ -1,6 +1,6 @@
 \documentclass{scrreprt}
 \usepackage{listings}
-\usepackage{underscore}
+\usepackage{underscore, titling}
 \usepackage[bookmarks=true]{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
@@ -24,7 +24,7 @@
 \def\myversion{1.0 }
 \date{}
 \title{Generic Web Portal (SaaS)}
-
+\author{Gahan Saraiya}
 %Load nomenclature and glossary files
 %\loadglsentries{glossary}
 \begin{document}
@@ -36,11 +36,11 @@
 %        \vspace{1.9cm}
         for\\
         \vspace{1.9cm}
-        Generic Web Portal (SaaS)\\
+        \thetitle\\
         \vspace{1.9cm}
         \LARGE{Version \myversion approved}\\
         \vspace{1.9cm}
-        Prepared by Gahan Saraiya (18MCEC10)\\
+        Prepared by \theauthor (18MCEC10)\\
         \vspace{1.9cm}
         Institute of Technology,\\Nirma University\\
         \vspace{1.9cm}
@@ -56,11 +56,9 @@
 \begin{center}
     \begin{tabular}{|c|c|c|c|}
         \hline
-	    Name & Date & Reason For Changes & Version\\
+	    Date & Revision & Reason For Changes & Author \\
         \hline
-	    21 & 22 & 23 & 24\\
-        \hline
-	    31 & 32 & 33 & 34\\
+	     & 1.0 & Initial Version & \theauthor\\
         \hline
     \end{tabular}
 \end{center}
@@ -159,37 +157,27 @@ The end-user might have to allow additional access to the camera or flash plugin
 \chapter{External Interface Requirements}
 
 \section{User Interfaces}
-- Admin Panel
-- Dashboard
-- User view
-- Critical Section (to modify database of their system)
-
-\section{Hardware Interfaces}
-$<$Describe the logical and physical characteristics of each interface between 
-the software product and the hardware components of the system. This may include 
-the supported device types, the nature of the data and control interactions 
-between the software and the hardware, and communication protocols to be 
-used.$>$
+\begin{itemize}
+	\item Admin Panel
+	\item Dashboard
+	\item User view
+	\item Critical Section (to modify database of their system)
+\end{itemize}
 
 \section{Software Interfaces}
-$<$Describe the connections between this product and other specific software 
-components (name and version), including databases, operating systems, tools, 
-libraries, and integrated commercial components. Identify the data items or 
-messages coming into the system and going out and describe the purpose of each.  
-Describe the services needed and the nature of communications. Refer to 
-documents that describe detailed application programming interface protocols.  
-Identify data that will be shared across software components. If the data 
-sharing mechanism must be implemented in a specific way (for example, use of a 
-global data area in a multitasking operating system), specify this as an 
-implementation constraint.$>$
+\begin{itemize}
+	\item Database: SQL Server
+	\item HTTP connection: Apache 2 (to serve request)
+	\item root access: SSH shell
+	\item version control: git
+	\item Technology: Python3, Django Framework, HTML, CSS, js
+\end{itemize}
 
 \section{Communications Interfaces}
-$<$Describe the requirements associated with any communications functions 
-required by this product, including e-mail, web browser, network server 
-communications protocols, electronic forms, and so on. Define any pertinent 
-message formatting. Identify any communication standards that will be used, such 
-as FTP or HTTP. Specify any communication security or encryption issues, data 
-transfer rates, and synchronization mechanisms.$>$
+\begin{itemize}
+	\item Require Internet Connection
+	\item client-server communication established over HTTP
+\end{itemize}
 
 
 \chapter{System Features}
