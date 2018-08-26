@@ -11,6 +11,8 @@
 \usepackage{array}  % for list of figures
 \graphicspath{ {figures/} }  % define graphicspath list out tabel of figures
 \usepackage{hyperref}
+%\usepackage[toc]{glossaries}  % to use glossaries
+\usepackage[acronym]{glossaries}
 % set up
 \hypersetup{
     bookmarks=false,    % show bookmarks bar?
@@ -23,7 +25,7 @@
     citecolor=black,       % color of links to bibliography
     filecolor=black,        % color of file links
     urlcolor=purple,        % color of external links
-    linktoc=page            % only page is linked
+%    linktoc=page            % only page is linked
 }
 
 % alterante itemize command
@@ -40,7 +42,17 @@
 \title{Generic Web Portal (SaaS)}
 \author{Gahan Saraiya}
 %Load nomenclature and glossary files
-%\loadglsentries{glossary}
+\newacronym{SaaS}{SaaS}{Software as a Service}
+\makeglossaries
+\newglossaryentry{computer}
+{
+	name=computer,
+	description={is a programmable machine that receives input,
+		stores and manipulates data, and provides
+		output in a useful format}
+}
+\newacronym{lvm}{LVM}{Logical Volume Manager}
+
 \begin{document}
 
 \begin{flushright}
@@ -323,10 +335,7 @@ that are pertinent to the project.$>$
 
 \section{Appendix A: Glossary}
 %see https://en.wikibooks.org/wiki/LaTeX/Glossary
-$<$Define all the terms necessary to properly interpret the SRS, including 
-acronyms and abbreviations. You may wish to build a separate glossary that spans 
-multiple projects or the entire organization, and just include terms specific to 
-a single project in each SRS.$>$
+\printglossary[type=\acronymtype]
 
 \section{Appendix B: Analysis Models}
 $<$Optionally, include any pertinent analysis models, such as data flow 
