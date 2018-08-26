@@ -1,3 +1,16 @@
 .idea
 *.o
 *.exe
+*.aux
+
+*.out
+*.gz
+*.ist
+*.glo
+*.fls
+*.fdb_latexmk
+*.acn
+*.lof
+*.log
+*.glsdefs
+*.toc
