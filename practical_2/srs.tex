@@ -1,4 +1,4 @@
-\documentclass{scrreprt}
+\documentclass{report}
 \usepackage{listings}
 \usepackage{underscore}
 \usepackage{bbding}  % to use custom itemize font
@@ -34,8 +34,8 @@
 \newcommand*\fail{\item[\XSolidBrush]}
 \def\myversion{1.0 }
 \def\university{Institute of Technology, \\Nirma University}
-\def\superuser{Platform Administrator}
-\def\admin{Administrator}
+\def\superuser{System Administrator}
+\def\admin{Organization Administrator}
 \def\staff{Staff user}
 \def\user{End User}
 \date{}
@@ -181,13 +181,29 @@ The end-user might have to allow additional access to the camera or flash plugin
  
 
 \chapter{External Interface Requirements}
+\section{\superuser's User Interfaces}
+\begin{itemize}
+	\item Dashboard 
+	\item Subscriber
+	\item Root Access (shell access giving complete freedom to manage whole system)
+	\item Support window
+\end{itemize}
 
-\section{User Interfaces}
+\section{\admin's User Interfaces}
 \begin{itemize}
 	\item Admin Panel
 	\item Dashboard
-	\item User view
+	\item Profile and Subscription management
 	\item Critical Section (to modify database of their system)
+	\item support window
+\end{itemize}
+
+\section{\user's User Interface (Conditional)}
+\space \user's UI section is conditional based upon decision of \admin.
+\begin{itemize}
+	\item Product View
+	\item Profile management
+	\item help and support
 \end{itemize}
 
 \section{Software Interfaces}
@@ -208,13 +224,23 @@ The end-user might have to allow additional access to the camera or flash plugin
 \chapter{System Features}
 \section{Functional Requirements}
 \label{functions}
+
+\subsection{\superuser's Requirement}
+\begin{enumerate}[start=1,label={\bfseries REQ \arabic*:}]
+	\addtolength{\itemindent}{40pt}
+	\item Root Access
+		\\ \superuser \space will have privilege to critical environment of system
+		\\ The whole system can be managed by \superuser \space including 
+	\item 
+	
+\end{enumerate}
 \subsection{\admin's Requirement}
 \begin{enumerate}[start=1,label={\bfseries REQ \arabic*:}]
 	\addtolength{\itemindent}{40pt}
 	\item Login
 		\\To login into system valid email address and strong password is required
 	\item Sign Up
-		\\ \admin\space can register to deploy the web service which require below basic information:
+		\\ \admin \space can register to deploy the web service which require below basic information:
 		\begin{itemize}
 			\arrow Valid Email address
 			\arrow Strong Password
@@ -311,36 +337,9 @@ The end-user might have to allow additional access to the camera or flash plugin
 		
 \end{enumerate}
 
-\section{Software Quality Attributes}
-$<$Specify any additional quality characteristics for the product that will be 
-important to either the customers or the developers. Some to consider are: 
-adaptability, availability, correctness, flexibility, interoperability, 
-maintainability, portability, reliability, reusability, robustness, testability, 
-and usability. Write these to be specific, quantitative, and verifiable when 
-possible. At the least, clarify the relative preferences for various attributes, 
-such as ease of use over ease of learning.$>$
-
-\section{Business Rules}
-$<$List any operating principles about the product, such as which individuals or 
-roles can perform which functions under specific circumstances. These are not 
-functional requirements in themselves, but they may imply certain functional 
-requirements to enforce the rules.$>$
-
-
-\chapter{Other Requirements}
-$<$Define any other requirements not covered elsewhere in the SRS. This might 
-include database requirements, internationalization requirements, legal 
-requirements, reuse objectives for the project, and so on. Add any new sections 
-that are pertinent to the project.$>$
-
 \section{Appendix A: Glossary}
 %see https://en.wikibooks.org/wiki/LaTeX/Glossary
 \printglossary[type=\acronymtype]
-
-\section{Appendix B: Analysis Models}
-$<$Optionally, include any pertinent analysis models, such as data flow 
-diagrams, class diagrams, state-transition diagrams, or entity-relationship 
-diagrams.$>$
 
 \section{Appendix C: To Be Determined List}
 $<$Collect a numbered list of the TBD (to be determined) references that remain 
